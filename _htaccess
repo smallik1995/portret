@@ -1,0 +1,10 @@
+<Ifmodule mod_headers.c>
+  Header always set Access-Control-Allow-Origin: "*"
+  Header always set Access-Control-Allow-Methods "POST, GET, PUT, DELETE, OPTIONS"
+  Header always set Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With"
+  Header always set Access-Control-Allow-Credentials "true"
+  RewriteRule ^ index.html [L]
+  RewriteEngine On
+  RewriteCond %{HTTP:Authorization} ^(.*)
+  RewriteRule .* - [e=HTTP_AUTHORIZATION:%1]
+</IfModule>

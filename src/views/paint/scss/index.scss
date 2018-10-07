@@ -1,0 +1,50 @@
+#paintWrapper {
+  height: 90vh;
+  position: relative;
+}
+
+#hair {
+  position: absolute;
+  top: 5vh;
+  left: 11vw;
+  width: 79%;
+}
+
+#eyebrows {
+  position: absolute;
+  width: 42%;
+  top: 27vh;
+  left: 30vw;
+}
+
+#eyes {
+  position: absolute;
+  top: 29vh;
+  left: 28vw;
+  width: 45%;
+}
+
+#nose {
+  position: absolute;
+  top: 36vh;
+  left: 41vw;
+  width: 14%;
+}
+
+#lips {
+  position: absolute;
+  top: 47vh;
+  left: 34vw;
+  width: 29%;
+}
+
+#accessoires {
+  position: absolute;
+  top: 27vh;
+  left: 22vw;
+  width: 55%;
+}
+
+.paint-menu {
+  height: 5vh;
+}
